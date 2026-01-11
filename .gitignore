@@ -16,3 +16,8 @@ venv/
 
 # Flask-Migrate / Alembic noise
 migrations/versions/__pycache__/
+
+# Logs
+logs/
+*.log
+*.log.*
