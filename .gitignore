@@ -1,3 +1,18 @@
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+instance/
+
+# Flask / Python
 __pycache__/
-venv/
+*.py[cod]
 .env
+.venv/
+venv/
+
+# Flask-Migrate / Alembic noise
+migrations/versions/__pycache__/

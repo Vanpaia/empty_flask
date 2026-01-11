@@ -20,5 +20,5 @@ password = os.getenv("DB_PASSWORD")
 class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY')
 #    SQLALCHEMY_DATABASE_URI = f'mysql+pymysql://{user}:{password}@{host}:{port}/{dbname}' or 'sqlite:///' + os.path.join(basedir, 'devdatabase.db')
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'devdatabase.db')
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'instance', 'devdatabase.db')
     SQLALCHEMY_TRACK_MODIFICATIONS = False

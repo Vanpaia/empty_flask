@@ -7,7 +7,7 @@ app = create_app(config_class=Config)
 
 with app.app_context():
 
-    u = User.query.filter_by(user_name="Test").first()
-    print(u)
+    u = User(user_name="Test", email="test@user.com")
+    db.session.add(u)
     u.set_password("123")
     db.session.commit()
